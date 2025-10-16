@@ -1,12 +1,25 @@
 library(R6)
 
+# This class serves as an abstract base class for BMI implementations in R.
+#
+# Note that R6 does not support formal abstract classes or interfaces, so we
+# define methods that simply stop with 'Not implemented'. Concrete BMI classes
+# should inherit from this class and implement all methods.
+#
+# Also note that the R6 constructor is named 'initialize', which conflicts with
+# the BMI method 'initialize'. To avoid this conflict, we rename the BMI
+# 'initialize' method to 'bmi_initialize'. Similarly, the R6 destructor is named
+# 'finalize', so we rename the BMI 'finalize' method to 'bmi_finalize'.
+#
+#' @title Bmi
+#' Abstract class defining the Basic Model Interface (BMI) in R.
+#' Documentation on each function can be found at https://bmi.csdms.io/.
+#' @export
 Bmi <- R6Class("Bmi",
   public = list(
-    # R6 constructor is also called initialize so rename BMI initialize
     bmi_initialize = function(config_file) stop('Not implemented'),
     update = function() stop('Not implemented'),
     update_until = function(time) stop('Not implemented'),
-    # R6 destructor is also called finalize so rename BMI finalize
     bmi_finalize = function() stop('Not implemented'),
 
     get_component_name = function() stop('Not implemented'),
