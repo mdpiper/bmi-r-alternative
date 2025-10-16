@@ -1,5 +1,3 @@
-library(R6)
-
 # This class serves as an abstract base class for BMI implementations in R.
 #
 # Note that R6 does not support formal abstract classes or interfaces, so we
