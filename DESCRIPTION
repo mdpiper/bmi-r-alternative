@@ -1,9 +1,10 @@
 Package: bmi
 Type: Package
-Title: What the Package Does (Short Line)
+Title: Basic Model Interface for R
 Version: 1.0
 Date: 2025-10-16
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line).
-License: What license is it under?
+Author: Mark Piper
+Maintainer: Mark Piper <mark.piper@colorado.edu>
+Description: Provides R mappings for the Basic Model Interface (BMI).
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0), R6

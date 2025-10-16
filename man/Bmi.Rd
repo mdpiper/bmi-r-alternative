@@ -2,10 +2,10 @@
 \alias{Bmi}
 \docType{data}
 \title{
-A Capitalized Title for the Data Set
+Basic Model Interface (BMI) for R
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Provides R mappings for the Basic Model Interface (BMI).
 }
 \usage{data("Bmi")}
 \format{
